@@ -26,6 +26,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".NavHome" />
+        <activity android:name=".NavAbout" />
+        <activity android:name=".NavJenis" />
+        <activity android:name=".NavProfil" />
+        <activity android:name=".NavCerita" />
+        <activity android:name=".NavVideo"></activity>
     </application>
 
 </manifest>

@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">Wayangku-ProjectPPB-001</string>
+    <string name="app_name">"Wayangku"</string>
+    <string name="openDrawer">Drawer dibuka</string>
+    <string name="closeDrawer">Drawer ditutup</string>
+    <string name="navigation_view_item_1">Home</string>
+    <string name="navigation_view_item_2">Profile</string>
+    <string name="navigation_view_item_3">Jenis Wayang</string>
+    <string name="navigation_view_item_4">Cerita Wayang</string>
+    <string name="navigation_view_item_5"> Video Wayang</string>
+    <string name="navigation_view_item_6">About Us</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

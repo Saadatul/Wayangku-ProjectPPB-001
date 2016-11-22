@@ -17,13 +17,11 @@
             android:id="@+id/toolbar"
             layout="@layout/layout_toolbar" />
 
-        <TextView
-            android:id="@+id/textView"
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Ini halaman awal"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:src="@drawable/icon_profile" />
 
     </LinearLayout>
 

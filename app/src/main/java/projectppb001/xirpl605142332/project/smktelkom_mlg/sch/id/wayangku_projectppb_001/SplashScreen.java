@@ -4,14 +4,14 @@ package projectppb001.xirpl605142332.project.smktelkom_mlg.sch.id.wayangku_proje
  * Created by -asus- on 11/22/2016.
  */
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class SplashScreen extends Activity {
+public class SplashScreen extends AppCompatActivity {
 
     //Set waktu lama splashscreen
     private static int splashInterval = 1500;

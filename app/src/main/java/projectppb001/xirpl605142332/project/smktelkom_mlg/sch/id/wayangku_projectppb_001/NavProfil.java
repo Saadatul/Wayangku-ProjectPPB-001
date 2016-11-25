@@ -1,19 +1,35 @@
 package projectppb001.xirpl605142332.project.smktelkom_mlg.sch.id.wayangku_projectppb_001;
 
+import android.content.ContentResolver;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class NavProfil extends AppCompatActivity {
+import java.util.ArrayList;
 
+import projectppb001.xirpl605142332.project.smktelkom_mlg.sch.id.wayangku_projectppb_001.Adapter.HotelAdapter;
+import projectppb001.xirpl605142332.project.smktelkom_mlg.sch.id.wayangku_projectppb_001.model.Hotel;
+
+public class NavProfil extends AppCompatActivity implements HotelAdapter.IHotelAdapter {
+
+    public static final int REQUEST_CODE_EDIT = 99;
+    public static final String HOTEL = "hotel";
+    public static final int REQUEST_CODE_ADD = 88;
+    int itemPos;
+    ArrayList<Hotel> mList = new ArrayList<>();
+    HotelAdapter mAdapter;
     //Mendefinisikan variabel
     private Toolbar toolbar;
     private NavigationView navigationView;
@@ -23,6 +39,16 @@ public class NavProfil extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nav_profil);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+        mAdapter = new HotelAdapter(this, mList);
+        recyclerView.setAdapter(mAdapter);
+
+        fillData();
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         // Menginisiasi Toolbar dan mensetting sebagai actionbar
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -72,6 +98,7 @@ public class NavProfil extends AppCompatActivity {
                 }
             }
         });
+
         // Menginisasi Drawer Layout dan ActionBarToggle
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.openDrawer, R.string.closeDrawer) {
@@ -92,6 +119,30 @@ public class NavProfil extends AppCompatActivity {
         //memanggil synstate
         actionBarDrawerToggle.syncState();
 
+    }
+
+    private void fillData() {
+        Resources resources = getResources();
+        String[] arJudul = resources.getStringArray(R.array.places);
+        String[] arDeskripsi = resources.getStringArray(R.array.place_desc);
+        String[] arDetail = resources.getStringArray(R.array.place_details);
+        String[] arLokasi = resources.getStringArray(R.array.place_locations);
+        TypedArray a = resources.obtainTypedArray(R.array.places_picture);
+        String[] arFoto = new String[a.length()];
+        for (int i = 0; i < arFoto.length; i++) {
+            int id = a.getResourceId(i, 0);
+
+            arFoto[i] = ContentResolver.SCHEME_ANDROID_RESOURCE + "://"
+                    + resources.getResourcePackageName(id) + "/"
+                    + resources.getResourceTypeName(id) + "/"
+                    + resources.getResourceEntryName(id);
+        }
+        a.recycle();
+
+        for (int i = 0; i < arJudul.length; i++) {
+            mList.add(new Hotel(arJudul[i], arDeskripsi[i], arDetail[i], arLokasi[i], arFoto[i]));
+        }
+        mAdapter.notifyDataSetChanged();
     }
 
     @Override
@@ -115,5 +166,51 @@ public class NavProfil extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void doClick(int pos) {
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(HOTEL, mList.get(pos));
+        startActivity(intent);
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_CODE_ADD && resultCode == RESULT_OK) {
+            Hotel hotel = (Hotel) data.getSerializableExtra(HOTEL);
+            mList.add(hotel);
+            mAdapter.notifyDataSetChanged();
+        } else if (requestCode == REQUEST_CODE_EDIT && resultCode == RESULT_OK) {
+            Hotel hotel = (Hotel) data.getSerializableExtra(HOTEL);
+            mList.remove(itemPos);
+            mList.add(itemPos, hotel);
+            mAdapter.notifyDataSetChanged();
+        }
+    }
+
+
+    /*@Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.navigation, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }*/
 
 }

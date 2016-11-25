@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2016 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources>
+    <string-array name="places">
+        <item>Semar</item>
+        <item>Gareng</item>
+        <item>Petruk</item>
+        <item>Bagong</item>
+        <item>Yudistira</item>
+        <item>Arjuna</item>
+        <item>Bima</item>
+        <item>Nakula</item>
+        <item>Sadewa</item>
+    </string-array>
+    <string-array name="place_desc">
+        <item>Semar memiliki bentuk fisik yang sangat unik, seolah-olah ia merupakan simbol
+            penggambaran jagad raya. Tubuhnya yang bulat merupakan simbol dari bumi, tempat tinggal
+            umat manusia dan makhluk lainnya.</item>
+        <item>Gareng adalah punakawan yang berkaki pincang. Hal
+            ini merupakan sebuah sanepa dari sifat Gareng sebagai kawula yang selalu hati-hati dalam
+            bertindak. Selain itu, cacat fisik Gareng yang lain adalah tangan yang ciker atau patah.
+            Ini adalah sanepa bahwa Gareng memiliki sifat tidak suka mengambil hak milik orang lain.
+            Diceritakan bahwa tumit kanannya terkena semacam penyakit bubul.</item>
+        <item>Menurut pedalangan, petruk adalah anak pendeta raksasa di pertapaan dan bertempat di
+            dalam laut bernama Begawan Salantara. Sebelumnya ia bernama Bambang Pecruk Panyukilan.
+            Ia gemar bersenda gurau, baik dengan ucapan maupun tingkah laku dan senang berkelahi.
+            Ia seorang yang pilih tanding/sakti di tempat kediamannya dan daerah sekitarnya. Oleh
+            karena itu ia ingin berkelana guna menguji kekuatan dan kesaktiannya. </item>
+        <item>Sebagai seorang panakawan yang sifatnya menghibur penonton wayang, tokoh Bagong pun
+            dilukiskan dengan ciri-ciri fisik yang mengundang kelucuan. Tubuhnya bulat, matanya
+            lebar, bibirnya tebal dan terkesan memble. Dalam figur wayang kulit, Bagong membawa
+            senjata kudi.</item>
+        <item>Yudistira adalah putra tertua pasangan Pandu dan Kunti, raja dan ratu dari kalangan
+            Dinasti Kuru, dengan pusat pemerintahan di Hastinapura. Kitab Mahabharata bagian pertama
+            (Adiparwa) mengisahkan tentang kutukan yang dialami Pandu setelah membunuh brahmana
+            bernama Resi Kindama tanpa sengaja. Brahmana itu terkena panah Pandu ketika ia dan
+            istrinya sedang bersanggama dalam wujud sepasang rusa. Menjelang ajalnya tiba, Resi
+            Kindama sempat mengutuk Pandu bahwa kelak ia akan mati ketika bersetubuh dengan istrinya.
+            Dengan penuh penyesalan, Pandu meninggalkan takhta Hastinapura dan memulai hidup sebagai
+            pertapa di hutan untuk mengurangi hawa nafsu. Kedua istrinya, yaitu Kunti dan Madri
+            dengan setia mengikutinya. </item>
+        <item>Dalam wiracarita Mahabharata versi nusantara, Arjuna memiliki banyak nama lain dan
+            nama julukan, antara lain: Permadi (tampan), Parta (pahlawan perang), Janaka (memiliki
+            banyak istri), Dananjaya, Kumbaljali, Ciptaning Mintaraga (pendeta suci), Pandusiwi,
+            Indratanaya (putra Batara Indra), Jahnawi (gesit trengginas), Palguna, Indrasuta,
+            Danasmara (perayu ulung) dan Margana (suka menolong) "Begawan Mintaraga" adalah nama
+            yang digunakan oleh Arjuna saat menjalani laku tapa di puncak Indrakila dalam rangka
+            memperoleh senjata sakti dari dewata, yang akan digunakan dalam perang yang tak
+            terhindarkan melawan musuh-musuhnya, yaitu keluarga Korawa.</item>
+        <item>Dalam wiracarita Mahabharata diceritakan bahwa Pandu tidak dapat membuat keturunan
+            akibat kutukan dari seorang resi di hutan. Kunti (istri Pandu) berseru kepada Bayu,
+            sang dewa angin. Dari hubungan Kunti dengan Bayu, lahirlah Bima. Atas anugerah dari
+            Bayu, Bima menjadi orang yang paling kuat dan penuh dengan kasih sayang.</item>
+        <item>Menurut Mahabharata, si kembar Nakula dan Sadewa memiliki kemampuan istimewa dalam
+            merawat kuda dan sapi. Nakula digambarkan sebagai orang yang sangat menghibur hati. Ia
+            juga teliti dalam menjalankan tugasnya dan selalu mengawasi sifat jahil kakaknya, Bima,
+            dan bahkan terhadap senda gurau yang terasa serius. Nakula juga memiliki kemahiran
+            dalam memainkan senjata pedang.</item>
+        <item>Sadewa merupakan yang termuda di antara para Pandawa, yaitu sebutan untuk kelima
+            putra Pandu, raja di Hastinapura. Sadewa dan saudara kembarnya, Nakula, lahir dari
+            rahim putri Kerajaan Madra yang bernama Madri (dalam pewayangan disebut Madrim).
+            Sementara itu ketiga kakak mereka, yaitu Yudistira, Bimasena, dan Arjuna lahir dari
+            rahim Kunti. Meskipun demikian, Sadewa dikisahkan sebagai putra yang paling disayangi
+            Kunti</item>
+    </string-array>
+    <string-array name="place_details">
+        <item>Semar selalu tersenyum, tetapi bermata sembab. Penggambaran ini sebagai simbol suka
+            dan duka. Wajahnya tua tetapi potongan rambutnya bergaya kuncung seperti anak kecil,
+            sebagai simbol tua dan muda. Ia berkelamin laki-laki, tetapi memiliki payudara seperti
+            perempuan, sebagai simbol pria dan wanita. Ia penjelmaan dewa tetapi hidup sebagai
+            rakyat jelata, sebagai simbol atasan dan bawahan.
+        </item>
+        <item>Dalam suatu carangan Gareng pernah menjadi raja di Paranggumiwayang dengan gelar Pandu
+            Pragola. Saat itu dia berhasil mengalahkan Prabu Welgeduwelbeh raja dari Borneo yang
+            tidak lain adalah penjelmaan dari saudaranya sendiri yaitu Petruk.
+        </item>
+        <item>Petruk mempuyai istri bernama Dewi Ambarwati, putri Prabu Ambarsraya, raja Negara
+            Pandansurat yang didapatnya melalui perang tanding. Para pelamarnya antara lain:
+            Kalagumarang dan Prabu Kalawahana raja raksasa di Guwaseluman. Petruk harus menghadapi
+            mereka dengan perang tanding dan akhirnya ia dapat mengalahkan mereka dan keluar sebagai
+            pemenang. Dewi Ambarwati kemudian diboyong ke Girisarangan dan Resi Pariknan yang
+            memangku perkawinannya. Dalam perkawinan ini mereka mempunyai anak lelaki dan diberi
+            nama Lengkungkusuma.
+        </item>
+        <item>Gaya bicara Bagong terkesan semaunya sendiri. Dibandingkan dengan ketiga panakawan
+            lainnya, yaitu Semar, Gareng, dan Petruk, maka Bagong adalah sosok yang paling lugu dan
+            kurang mengerti tata krama. Meskipun demikian majikannya tetap bisa memaklumi.
+        </item>
+        <item>Setelah lama tidak dikaruniai keturunan, Pandu mengutarakan niatnya untuk memiliki
+            anak. Kunti yang menguasai mantra Adityahredaya segera mewujudkan keinginan suaminya.
+            Mantra tersebut adalah ilmu pemanggil dewa untuk mendapatkan putera. Dengan menggunakan
+            mantra itu, Kunti berhasil mendatangkan Dewa Dharma dan mendapatkan anugerah putra
+            darinya tanpa melalui persetubuhan. Putra pertama itu diberi nama Yudistira. Dengan
+            demikian, Yudistira menjadi putra sulung Pandu, sebagai hasil pemberian Dharma, yaitu
+            dewa keadilan dan kebijaksanaan.
+        </item>
+        <item>Dalam Mahabharata diceritakan bahwa Prabu Pandu tidak bisa melanjutkan keturunan
+            karena dikutuk oleh seorang resi. Kunti—istri pertamanya—menerima anugerah dari Resi
+            Durwasa sehingga mampu memanggil dewa sesuai dengan keinginannya, dan juga dapat
+            memperoleh anugerah dari dewa yang dipanggilnya. Pandu dan Kunti memanfaatkan anugerah
+            tersebut untuk memanggil Dewa Yama (Dharmaraja; Yamadipati), Bayu (Maruta), dan Indra
+            (Sakra) yang kemudian memberi mereka tiga putra.
+        </item>
+        <item>Kata bhīma dalam bahasa Sanskerta artinya kurang lebih adalah hebat, dahsyat,
+            mengerikan. Nama lain Bima yaitu Wrekodara, dalam alih aksara bahasa Sanskerta
+            dieja vṛkodhara, artinya ialah "perut serigala", dan merujuk ke kegemarannya makan.
+            Nama julukan yang lain adalah Bhīmasena yang berarti panglima perang.</item>
+        <item>Selain Nakula dalam Mahabharata, terdapat Nakula lain yang merupakan seorang ahli
+            pengobatan, penulis Aswasastra (kitab tentang kuda). Secara harfiah, kata nakula dalam
+            bahasa Sanskerta merujuk kepada warna Ichneumon, sejenis tikus atau binatang pengerat
+            dari Mesir. Nakula juga dapat berarti "cerpelai", atau dapat juga berarti
+            "tikus benggala". Nakula juga merupakan nama lain dari Dewa Siwa.</item>
+        <item>Sadewa merupakan tokoh utama dalam Kakawin Sudamala, yaitu karya sastra berbahasa
+            Jawa Kuna peninggalan Kerajaan Majapahit. Naskah ini bercerita tentang kutukan yang
+            menimpa istri Batara Guru bernama Umayi, akibat perbuatannya berselingkuh dengan Batara
+            Brahma. Dikisahkan bahwa Umayi berubah menjadi rakshasi bernama Ra Nini, dan hanya bisa
+            kembali ke wujud asal apabila diruwat oleh bungsu Pandawa. Maka, Sadewa pun diculik dan
+            dipaksa memimpin prosesi ruwatan. Setelah dirasuki Batara Guru, barulah Sadewa mampu
+            menjalankan permintaan Ra Nini.</item>
+    </string-array>
+    <string-array name="place_locations">
+        <item>Kyai Lurah Semar Badranaya adalah nama tokoh panakawan paling utama dalam pewayangan
+            Jawa dan Sunda. Tokoh ini dikisahkan sebagai pengasuh sekaligus penasihat para kesatria
+            dalam pementasan kisah-kisah Mahabharata dan Ramayana. Tentu saja nama Semar tidak
+            ditemukan dalam naskah asli kedua wiracarita tersebut yang berbahasa Sanskerta, karena
+            tokoh ini merupakan asli ciptaan pujangga Jawa.</item>
+        <item>Nama lengkap dari Gareng sebenarnya adalah Nala Gareng, hanya saja masyarakat sekarang
+            lebih akrab dengan sebutan “Gareng”. </item>
+        <item>Petruk adalah tokoh punakawan dalam pewayangan Jawa, di pihak keturunan/trah Witaradya.
+            Petruk tidak disebutkan dalam kitab Mahabarata. Jadi jelas bahwa kehadirannya dalam
+            dunia pewayangan merupakan gubahan asli Jawa. Di ranah Pasundan, Petruk lebih dikenal
+            dengan nama Dawala atau Udel.</item>
+        <item>Ki Lurah Bagong adalah nama salah satu tokoh panakawan dalam kisah pewayangan yang
+            berkembang di Jawa Tengah dan Jawa Timur. Tokoh ini dikisahkan sebagai anak bungsu Semar.
+            Dalam pewayangan Sunda juga terdapat tokoh panakawan yang identik dengan Bagong, yaitu
+            Cepot atau Astrajingga. Namun bedanya, menurut versi ini, Cepot adalah anak tertua Semar.
+            Dalam wayang banyumasan Bagong lebih dikenal dengan sebutan Bawor.</item>
+        <item>Yudistira alias Dharmawangsa, adalah salah satu
+            tokoh protagonis dalam wiracarita Mahabharata. Ia merupakan seorang raja yang memerintah
+            kerajaan Kuru, dengan pusat pemerintahan di Hastinapura. Ia merupakan yang tertua di
+            antara lima Pandawa, atau para putra Pandu. Dalam tradisi pewayangan, Yudistira diberi
+            gelar prabu dan memiliki julukan Puntadewa, sedangkan kerajaannya disebut dengan nama
+            Kerajaan Amarta.</item>
+        <item>Arjuna adalah nama seorang tokoh protagonis dalam
+            wiracarita Mahabharata. Ia dikenal sebagai anggota Pandawa yang berparas menawan dan
+            berhati lemah lembut. Dalam Mahabharata diriwayatkan bahwa ia merupakan putra Prabu
+            Pandu, raja di Hastinapura dengan Kunti atau Perta, putri Prabu Surasena, raja Wangsa
+            Yadawa di Mathura. Mahabharata mendeskripsikan Arjuna sebagai teman dekat Kresna, yang
+            disebut dalam kitab Purana sebagai awatara (penjelmaan) Dewa Wisnu</item>
+        <item>Bima atau Bimasena adalah seorang tokoh protagonis dalam wiracarita Mahabharata.
+            Ia merupakan putra Kunti, dan dikenal sebagai tokoh Pandawa yang kuat, bersifat selalu
+            kasar dan menakutkan bagi musuh, walaupun sebenarnya berhati lembut.</item>
+        <item>Nakula , adalah seorang tokoh protagonis dalam wiracarita Mahabharata. Ia merupakan
+            putra Madri dan Pandu. Ia adalah saudara kembar Sadewa dan dianggap putra Dewa Aswin,
+            dewa tabib kembar. Menurut kitab Mahabharata, Nakula sangat tampan dan sangat elok parasnya.</item>
+        <item>Sadewa adalah salah satu tokoh utama dalam
+            wiracarita Mahabharata. Ia merupakan anggota Pandawa yang paling muda, yang memiliki
+            saudara kembar bernama Nakula. Meskipun kembar, Nakula dikisahkan memiliki wajah yang
+            lebih tampan daripada Sadewa, sedangkan Sadewa lebih pandai daripada kembarannya.</item>
+    </string-array>
+    <array name="places_picture">
+        <item>@drawable/aa</item>
+        <item>@drawable/bb</item>
+        <item>@drawable/cc</item>
+        <item>@drawable/dd</item>
+        <item>@drawable/ee</item>
+        <item>@drawable/ff</item>
+        <item>@drawable/gg</item>
+        <item>@drawable/hh</item>
+        <item>@drawable/ii</item>
+    </array>
+</resources>

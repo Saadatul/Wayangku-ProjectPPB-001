@@ -1,30 +1,26 @@
 package projectppb001.xirpl605142332.project.smktelkom_mlg.sch.id.wayangku_projectppb_001;
 
 import android.content.Intent;
-import android.content.res.Resources;
-import android.content.res.TypedArray;
-import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
+import projectppb001.xirpl605142332.project.smktelkom_mlg.sch.id.wayangku_projectppb_001.model.Hotel;
 
-import projectppb001.xirpl605142332.project.smktelkom_mlg.sch.id.wayangku_projectppb_001.Jenis.Adapter.HotelAdapter;
-import projectppb001.xirpl605142332.project.smktelkom_mlg.sch.id.wayangku_projectppb_001.Jenis.model.Hotel;
+public class DetailActivity extends AppCompatActivity {
 
-public class NavJenis extends AppCompatActivity {
-    ArrayList<Hotel> mList = new ArrayList<>();
-    HotelAdapter mAdapter;
+    //Mendefinisikan variabel
     private Toolbar toolbar;
     private NavigationView navigationView;
     private DrawerLayout drawerLayout;
@@ -32,11 +28,10 @@ public class NavJenis extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nav_jenis);
-
-        // Menginisiasi Toolbar dan mensetting sebagai actionbar
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setContentView(R.layout.activity_detail);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         // Menginisiasi  NavigationView
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
         //Mengatur Navigasi View Item yang akan dipanggil untuk menangani item klik menu navigasi
@@ -103,51 +98,28 @@ public class NavJenis extends AppCompatActivity {
         //memanggil synstate
         actionBarDrawerToggle.syncState();
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
-        recyclerView.setLayoutManager(layoutManager);
-        mAdapter = new HotelAdapter(mList);
-        recyclerView.setAdapter(mAdapter);
+        Hotel hotel = (Hotel) getIntent().getSerializableExtra(NavProfil.HOTEL);
+        setTitle(hotel.judul);
+        ImageView ivFoto = (ImageView) findViewById(R.id.imageFoto);
+        ivFoto.setImageURI(Uri.parse(hotel.foto));
+        TextView tvDeskripsi = (TextView) findViewById(R.id.place_detail);
+        tvDeskripsi.setText(hotel.deskripsi + "\n\n" + hotel.detail);
 
-        fillData();
-    }
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
-    private void fillData() {
-        Resources resources = getResources();
-        String[] arJudul = resources.getStringArray(R.array.wayang);
-        String[] arDeskripsi = resources.getStringArray(R.array.wayang_deskripsi);
-        TypedArray a = resources.obtainTypedArray(R.array.wayang_gambar);
-        Drawable[] arFoto = new Drawable[a.length()];
-        for (int i = 0; i < arFoto.length; i++) {
-            arFoto[i] = a.getDrawable(i);
-        }
-        a.recycle();
-
-        for (int i = 0; i < arJudul.length; i++) {
-            mList.add(new Hotel(arJudul[i], arDeskripsi[i], arFoto[i]));
-        }
-        mAdapter.notifyDataSetChanged();
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.navigation, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
     }
 }

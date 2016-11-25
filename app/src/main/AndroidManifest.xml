@@ -31,7 +31,11 @@
         <activity android:name=".NavJenis" />
         <activity android:name=".NavProfil" />
         <activity android:name=".NavCerita" />
-        <activity android:name=".NavVideo"></activity>
+        <activity android:name=".NavVideo" />
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
